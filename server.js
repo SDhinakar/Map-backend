@@ -20,13 +20,13 @@ mongoose.connect(process.env.MONGO_URI, {
 
 // Import Routes
 const authRoutes = require('./routes/authRoutes');
-const expertRoutes = require('./routes/expertRoutes');
-const facultyRoutes = require('./routes/facultyRoutes');
+// const expertRoutes = require('./routes/expertRoutes');
+// const facultyRoutes = require('./routes/facultyRoutes');
 
 // Use Routes
 app.use('/api/auth', authRoutes);
-app.use('/api/experts', expertRoutes);
-app.use('/api/faculties', facultyRoutes);
+// app.use('/api/experts', expertRoutes);
+// app.use('/api/faculties', facultyRoutes);
 
 // Root Endpoint
 app.get('/', (req, res) => {
